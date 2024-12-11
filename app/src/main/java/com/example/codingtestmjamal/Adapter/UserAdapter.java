@@ -42,7 +42,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         holder.emailIdTextView.setText(user.getEmailId());
         holder.passwordTextView.setText(user.getPassword());
         holder.roleidTextView.setText("" + user.getRoleid());
-        holder.isActiveTextView.setText(user.getActive().toString());
+        holder.isActiveTextView.setText(String.valueOf(user.getActive()));
+
     }
 
     @Override
